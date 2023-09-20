@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/card_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/speak_button"
+            android:text="Word"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/speak_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/flip_button"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+        <TextView
+            android:id="@+id/card_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/speak_button"
+            android:text="Definition"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/flip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_rotate" />
+
+        <CheckBox
+            android:id="@+id/learned_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/flip_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:text="Learned"
+            android:textAlignment="viewEnd" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

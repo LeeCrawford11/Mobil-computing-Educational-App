@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WordExplorer</string>
+    <string name="flashcards">Flashcards</string>
+    <string name="back">Back</string>
+    <string-array name="difficulty_array">
+        <item>EASY</item>
+        <item>MEDIUM</item>
+        <item>HARD</item>
+    </string-array>
+</resources>

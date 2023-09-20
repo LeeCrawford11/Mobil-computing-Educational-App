@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choose Your Activity"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/flashcardsButton"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/pink_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Flashcards"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/flashcardsButton"
+        app:layout_constraintEnd_toEndOf="@+id/flashcardsButton"
+        app:layout_constraintStart_toStartOf="@+id/flashcardsButton"
+        app:layout_constraintTop_toTopOf="@+id/flashcardsButton" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/red_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashcardsButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/backButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

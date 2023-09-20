@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Word Explorer"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/startButton"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/pink_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Start"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="@+id/startButton"
+        app:layout_constraintStart_toStartOf="@+id/startButton"
+        app:layout_constraintTop_toTopOf="@+id/startButton" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/red_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsButton"
+        app:layout_constraintEnd_toEndOf="@+id/settingsButton"
+        app:layout_constraintStart_toStartOf="@+id/settingsButton"
+        app:layout_constraintTop_toTopOf="@+id/settingsButton" />
+
+    <ImageButton
+        android:id="@+id/userStatisticsButton"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/orange_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="User Settings"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userStatisticsButton"
+        app:layout_constraintEnd_toEndOf="@+id/userStatisticsButton"
+        app:layout_constraintStart_toStartOf="@+id/userStatisticsButton"
+        app:layout_constraintTop_toTopOf="@+id/userStatisticsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
